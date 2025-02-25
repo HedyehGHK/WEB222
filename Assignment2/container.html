@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artemis Book Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <hr class="line" />
+      <h1 id="title">Artemis Book Store</h1>
+
+      <hr class="line" />
+    </header>
+
+    <nav>
+      <button id="menu-button">MENU</button>
+      <ul id="menu-list">
+        <li>
+          <button onclick="loadPage('home.html')" tabindex="2">Home</button>
+        </li>
+        <li>
+          <button onclick="loadPage('fiction.html')" tabindex="3">
+            Fiction
+          </button>
+        </li>
+        <li>
+          <button onclick="loadPage('nonfiction.html')" tabindex="4">
+            Non-Fiction
+          </button>
+        </li>
+        <li>
+          <button onclick="loadPage('poetry.html')" tabindex="5">Poetry</button>
+        </li>
+        <li>
+          <button onclick="loadPage('order.html')" tabindex="6">
+            Order Now
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <iframe name="content-frame" src="home.html"></iframe>
+    </main>
+
+    <script>
+      // Function to load a page into the iframe
+      function loadPage(page) {
+        const iframe = document.querySelector('iframe[name="content-frame"]'); // Select the iframe
+        iframe.src = page; // Update the iframe's src attribute to load the selected page
+      }
+    </script>
+  </body>
+</html>

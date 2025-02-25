@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artemis Book Store - Order</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article class="order-grid">
+        <section class="order-item">
+          <label for="fiction">Fiction Books:</label>
+          <select id="fiction" name="fiction" size="1">
+            <option value="">Select a book...</option>
+            <option value="harrypotter">Harry Potter ($24.99)</option>
+            <option value="animalfarm">Animal Farm ($26.99)</option>
+            <option value="PridePrejudice">Pride and Prejudice ($28.99)</option>
+            <option value="TheGivingTree">The Giving Tree ($20.99)</option>
+            <option value="Twilight">Twilight ($23.99)</option>
+          </select>
+          <input
+            type="text"
+            id="fiction-qty"
+            maxlength="3"
+            size="10"
+            onkeydown="return fVerifyInput(event)"
+          />
+        </section>
+
+        <section class="order-item">
+          <label for="nonfiction">Non-Fiction Books:</label>
+          <select id="nonfiction" name="nonfiction" size="1">
+            <option value="">Select a book...</option>
+            <option value="DiaryYoungGirl">
+              The Diary of a Young Girl ($21.99)
+            </option>
+            <option value="HistoryHumankind">
+              A Brief History of Humankind ($19.99)
+            </option>
+            <option value="ShortHistoryNearlyEverything">
+              A Short History of Nearly Everything ($12.99)
+            </option>
+            <option value="HappinessProject">
+              The Happiness Project ($18.99)
+            </option>
+            <option value="EatPrayLove">Eat, Pray, Love ($11.99)</option>
+          </select>
+          <input
+            type="text"
+            id="nonfiction-qty"
+            maxlength="3"
+            size="10"
+            onkeydown="return fVerifyInput(event)"
+          />
+        </section>
+
+        <section class="order-item">
+          <label for="poetry">Poetry Books:</label>
+          <select id="poetry" name="poetry" size="1">
+            <option value="">Select a book...</option>
+            <option value="Leaves">Leaves of Grass ($11.99)</option>
+            <option value="Shakespeare">Shakespeare's Sonnets ($18.99)</option>
+            <option value="Ariel">Ariel ($16.99)</option>
+            <option value="RobertFrost">
+              The Poetry of Robert Frost ($20.99)
+            </option>
+          </select>
+          <input
+            type="text"
+            id="poetry-qty"
+            maxlength="3"
+            size="10"
+            onkeydown="return fVerifyInput(event)"
+          />
+        </section>
+
+        <section class="button-group">
+          <button class="order-button" onclick="placeOrder()" tabindex="1">
+            Order Now
+          </button>
+          <button class="cancel-button" onclick="cancelOrder()" tabindex="2">
+            Cancel
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      function fVerifyInput(e) {
+        console.log(
+          `${e.type}: key = ${e.key}, which = ${e.which}, charCode = ${e.charCode}, keyCode = ${e.keyCode}`
+        );
+
+        if (
+          (e.key >= 0 && e.key <= 9) ||
+          e.key == "Backspace" ||
+          e.key == "Delete" ||
+          e.key == "ArrowLeft" ||
+          e.key == "ArrowRight"
+        ) {
+          return true;
+        }
+        return false;
+      }
+
+      function placeOrder() {
+        alert("Thank you for your order!");
+      }
+
+      function cancelOrder() {
+        alert("Your order has been cancelled.");
+      }
+    </script>
+  </body>
+</html>
