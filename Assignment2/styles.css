@@ -1,9 +1,10 @@
+/*  author: Hedyeh Ghesmati Kalourazi */
 body {
   font-family: "Georgia", serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: rgb(247, 228, 241);
+  color: #5f0586;
 }
 
 header {
@@ -14,8 +15,8 @@ header {
 h1 {
   font-family: "Arial", sans-serif;
   font-size: 48px;
-  color: #034e55;
-  text-shadow: 1px 1px 2px #ccc;
+  color: #950484;
+  text-shadow: 1px 1px 2px #f1ddea;
   padding: 30px;
   margin: 0;
   transition: font-size 3s, color 2s;
@@ -23,19 +24,20 @@ h1 {
 
 #title:hover {
   font-size: 4em;
-  color: #9cdcf3;
+  color: rgb(252, 165, 248);
 }
 
 hr.line {
   background-image: repeating-linear-gradient(
     45deg,
-    #64c1c8,
-    #64c1c8 10px,
-    rgb(215, 244, 232) 10px,
-    rgba(215, 244, 232, 1) 20px
+    rgb(239, 7, 166),
+    rgb(255, 255, 255) 10px,
+    rgb(88, 2, 74) 10px,
+    rgb(250, 250, 250) 20px
   );
-  border-width: 0;
+  border-width: 0px;
   height: 10px;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -46,8 +48,8 @@ nav {
 #menu-button {
   width: 80px;
   height: 80px;
-  background: linear-gradient(to bottom right, #64c1c8, rgb(96, 235, 231));
-  color: #034e55;
+  background: linear-gradient(to bottom right, #950484, rgb(252, 165, 248));
+  color: #5f0586;
   border: none;
   padding: 10px 20px;
   font-size: 20px;
@@ -65,6 +67,7 @@ nav {
 
 #menu-list {
   list-style: none;
+  color: #69045c;
   padding: 1px;
   margin: 1px 0;
   opacity: 0;
@@ -95,7 +98,7 @@ nav {
 }
 
 #menu-list button:hover {
-  color: #64c1c8;
+  color: #e12ec9;
 }
 
 nav:hover #menu-button {
@@ -134,23 +137,23 @@ iframe {
 }
 
 .product-item img {
-  width: 20%;
+  width: 25%;
   height: auto;
   margin-bottom: 20px;
   margin-left: 100px;
 }
 
 .product-item h3 {
-  font-size: 10px;
-  color: #2c1810;
+  font-size: 15px;
+  color: #5f0586;
   margin-bottom: 20px;
   padding: 0;
   margin-right: auto;
 }
 
-.product-item p.price {
+.price {
   font-size: 15px;
-  color: #2c1810;
+  color: #5f0586;
   font-weight: bold;
   margin-bottom: 20px;
   margin-right: 50px;
@@ -189,12 +192,12 @@ button {
 }
 
 .order-button {
-  background-color: #058746;
+  background-color: #950484;
   color: #f5f5f0;
 }
 
 .cancel-button {
-  background-color: #a2bebd;
+  background-color: rgb(255, 100, 200);
   color: #f5f5f0;
 }
 
