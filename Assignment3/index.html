@@ -1,0 +1,41 @@
+<!--/* Author: Hedyeh Ghesmati Kalourazi*/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Temperature Conversion by Hedyeh Ghesmati</h1>
+    <div class="container">
+      <div class="input-group">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="text" id="fahrenheit" maxlength="5" />
+      </div>
+
+      <div class="input-group">
+        <label for="celsius">Celsius</label>
+        <input type="text" id="celsius" readonly />
+      </div>
+      <div class="history-header">
+        <label for="history" class="history-label">Fahrenheit Celsius</label>
+      </div>
+
+      <div class="history-section">
+        <textarea id="history" readonly></textarea>
+      </div>
+
+      <div class="button-group">
+        <button id="convert" disabled accesskey="c"><u>C</u>onvert</button>
+        <button id="average" disabled accesskey="a"><u>A</u>verage</button>
+        <button id="reset" style="display: none" accesskey="r">
+          <u>R</u>eset
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
