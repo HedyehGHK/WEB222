@@ -1,0 +1,71 @@
+<!-- Author: Your Name -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco-World Info Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Eco-World Info Hub</h1>
+    <p>Discover sustainable beauty on our planet</p>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#eco1">Eco Scene 1</a></li>
+        <li><a href="#eco2">Eco Scene 2</a></li>
+        <li><a href="#eco3">Eco Scene 3</a></li>
+        <li><a href="#eco4">Eco Scene 4</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <article id="eco1">
+        <img src="images/eco1.jpg" alt="Eco Image 1">
+        <p>Caption: A clean river flowing through a green forest.</p>
+        <p>Contact: eco1@greenmail.com | (555) 123-4567 | 100 Green Lane</p>
+        <img src="images/up-arrow.png" class="up-arrow" alt="Go to top" onclick="scrollToTop()">
+        <hr>
+      </article>
+
+      <article id="eco2">
+        <img src="images/eco2.jpg" alt="Eco Image 2">
+        <p>Caption: Solar panels soaking up clean energy.</p>
+        <p>Contact: eco2@greenmail.com | (555) 234-5678 | 200 Solar Blvd</p>
+        <img src="images/up-arrow.png" class="up-arrow" alt="Go to top" onclick="scrollToTop()">
+        <hr>
+      </article>
+
+      <article id="eco3">
+        <img src="images/eco3.jpg" alt="Eco Image 3">
+        <p>Caption: Children planting trees in a city park.</p>
+        <p>Contact: eco3@greenmail.com | (555) 345-6789 | 300 Forest Rd</p>
+        <img src="images/up-arrow.png" class="up-arrow" alt="Go to top" onclick="scrollToTop()">
+        <hr>
+      </article>
+
+      <article id="eco4">
+        <img src="images/eco4.jpg" alt="Eco Image 4">
+        <p>Caption: Wind turbines turning in the evening sun.</p>
+        <p>Contact: eco4@greenmail.com | (555) 456-7890 | 400 Wind Way</p>
+        <img src="images/up-arrow.png" class="up-arrow" alt="Go to top" onclick="scrollToTop()">
+        <hr>
+      </article>
+
+      <!-- Score Checker -->
+      <section class="score-checker">
+        <label for="scoreInput">Enter Sustainability Score (1–100):</label>
+        <input type="text" id="scoreInput" maxlength="3">
+        <button id="checkBtn" disabled>Check Sustainability Score</button>
+        <p id="resultMsg"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

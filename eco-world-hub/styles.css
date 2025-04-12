@@ -1,0 +1,94 @@
+/* Author: Your Name */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #e6f2e6;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  article img {
+    width: 80%;
+
+    object-fit: cover;
+  }
+  
+  
+  nav {
+    width: 25%;
+    background-color: #c8e6c9;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav a {
+    color: #1b5e20;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    width: 65%;
+  }
+  
+  article {
+    margin-bottom: 30px;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .up-arrow {
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .score-checker {
+    background-color: #a5d6a7;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .score-checker input {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .score-checker button {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  
+  #resultMsg {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
