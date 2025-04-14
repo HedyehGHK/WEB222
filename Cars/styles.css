@@ -1,0 +1,93 @@
+/* Author: Hedyeh Ghesmati Kalourazi*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Main container */
+#container {
+  border: 6px double yellow;
+  padding: 30px;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+/* Country list */
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+/* Submit button */
+button {
+  margin-top: 20px;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #888;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Result box */
+#result {
+  margin-top: 30px;
+}
+
+#result h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#result div {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#result div.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+/* Total sales */
+.total {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
